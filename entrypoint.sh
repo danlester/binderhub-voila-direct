@@ -31,11 +31,8 @@ do
     fi
 done
 
-destport=$((port + 1))
-
-echo "Using internal port $destport"
 
 base_url=$JUPYTERHUB_SERVICE_PREFIX
 
-voila /home/jovyan/Presentation.ipynb --port=${destport} --no-browser --Voila.base_url=${base_url}
+voila /home/jovyan/Presentation.ipynb --port=${port} --no-browser --Voila.base_url=${base_url}
 
