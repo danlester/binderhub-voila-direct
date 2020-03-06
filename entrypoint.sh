@@ -37,5 +37,5 @@ echo "Using internal port $destport"
 
 base_url=$JUPYTERHUB_SERVICE_PREFIX
 
-voila /home/jovyan/Presentation.ipynb --port=${port} --no-browser --Voila.base_url=${base_url}/ --Voila.server_url=/
+voila /home/jovyan/Presentation.ipynb --port=${port} --no-browser --Voila.base_url=${base_url} --Voila.server_url=/
 
